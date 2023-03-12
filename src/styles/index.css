@@ -1,0 +1,149 @@
+/* Monte sua estilização aqui */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #212529;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__container {
+    margin-top: 2.5rem;
+    margin-bottom: 6rem;
+    width: 90%;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 125px;
+}
+
+.header__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .9rem;
+}
+
+.header__searchInput {
+    background: #343A40;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    color: white;
+    height: 52px;
+}
+
+.header__searchInput::placeholder {
+    color: #7C8B99;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.header__searchBtn {
+    padding: 1rem 2rem;
+    background: #4C6EF5;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    height: 52px;
+}
+
+.header__searchImg {
+    width: 18px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.pokemonList {
+    width: 90%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemonList__title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #DEE2E6;
+    margin-bottom: 5rem;
+}
+
+.pokemonList__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+    min-width: 100%;
+}
+
+.pokemonList__listItem {
+    min-width: 100%;
+    background: #343A40;
+    border-radius: 8px;
+    padding: 1rem .8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.pokemonList__listItem img {
+    width: 60px;
+    height: 60px;
+}
+
+.pokemonList__listItem p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #CED4DA;
+    text-transform: capitalize;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+
+.pagination__btn {
+    padding: 1rem 2rem;
+    background: #4C6EF5;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: .8rem;
+    color: #DEE2E6;
+    margin-bottom: 5rem;
+}
